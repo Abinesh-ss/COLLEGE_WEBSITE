@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,400&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-shadow: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    font-family: "Nunito",sans-serif;
+    font-weight: bolder;
+    background-size: 100%;
+    height: 100%;
+}
+.top{
+    background-color: rgb(18, 18, 223);
+    color:white;
+    padding:3px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col img{
+    width: 100%;
+    transition: .3s ease;
+}
+.col:hover img{
+    transform: scale(1.1);
+}
+.col .layer{
+    background: linear-gradient(black,#0ef);
+    height:100%;
+    width:100%;
+    color: black;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .3s ease;
+
+}
+.col:hover .layer{
+    transform: translateY(0);
+}
+.layer:hover{
+    background: linear-gradient(rgba(0,0,0,0.5),#0ef);
+
+}
+.layer h3{
+    font-size: 0.2rem;
+}
+.left,.right{
+    min-width: 300px;
+}
+.left div,.right div{
+    padding:5px 10px;
+}
+nav{
+    background-color: rgb(250, 122, 2);
+    color: white;
+    padding:15px;
+}
+.nav-item{
+    padding:0px 15px;
+    color: white;
+}
+.a{
+    position: relative;
+    color: white;
+    display:flex;
+    justify-content: center;
+    animation: fadeInRight 2s ease;
+}
+.us{
+    position: absolute;
+	top:45%;
+	font-size: 2rem;
+	color: white;
+}
+h1{
+    margin-left: 44%;
+    font-family: "Nunito",sans-serif;
+    font-weight: bolder;
+}
+.foto1 img{
+    margin-top: 12px;
+    margin-left: 12%;
+    height: 18%;
+    width: 78%;
+}
+.b{
+    display: flex;
+    font-family: "Nunito",sans-serif;
+    font-size: 30px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 7%;
+    animation: fadeInRight 2s ease;
+}
+.foto{
+    float: left;
+    width: 22%;
+    padding: 5px;
+    
+}
+.foto:hover img{
+    transform: scale(1.2);
+}
+.foto1{
+    animation: fadeInRight 2s ease;
+}
+
+.cared::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.foto img{
+    margin-left: 120px;
+    border-radius: 50%;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    0%{
+        background-position: 0 50%;
+    }
+
+}
+.blink{
+    background-color: black;
+    padding: auto;
+    font-size:large;
+    color: #7462ff;
+}
+.box{
+    height: 100%;
+    max-width: 1000px;
+}
+.a1{
+    color: black;
+    margin-left: 30%;
+    margin-top: 70px;
+    font-weight: 100px;
+}
+.a1 span
+{
+    color: palegreen;
+}
+.r{
+ margin-left: 500px;
+}
+@media (max-width:490px){
+    .us{
+        font-size: 24px !important;
+        
+    }
+}
